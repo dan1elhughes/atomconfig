@@ -1,0 +1,70 @@
+"*":
+  "atom-beautify":
+    general:
+      analytics: false
+  core:
+    autoHideMenuBar: true
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "wrap-guide"
+      "linter"
+    ]
+    packagesWithKeymapsDisabled: [
+      "tool-bar"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "nucleus-dark-ui"
+      "firewatch-syntax"
+    ]
+    uriHandlerRegistration: "always"
+  editor:
+    fontFamily: "{{ FONT }}"
+    fontSize: 23
+    invisibles:
+      eol: false
+      tab: false
+    lineHeight: 1.75
+    scrollPastEnd: true
+    showIndentGuide: false
+    showInvisibles: true
+    showLineNumbers: false
+    softTabs: false
+    softWrap: true
+    tabLength: 4
+    tabType: "hard"
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "{{ USERID }}"
+  "file-icons":
+    coloured: false
+    tabPaneIcon: false
+  "go-plus":
+    format:
+      tool: "gofmt"
+    panel: {}
+    test:
+      coverageHighlightMode: "disabled"
+  "line-ending-selector":
+    defaultLineEnding: "LF"
+  linter: {}
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+  "linter-ui-default":
+    panelHeight: 224.75
+  "minimap-plus": {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNotInPackageJson: true
+      showInStatusBar: true
+    prettierOptions:
+      useTabs: true
+    useEditorConfig: false
+    useEslint: true
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: true
