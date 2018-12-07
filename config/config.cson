@@ -2,12 +2,22 @@
   "atom-beautify":
     general:
       analytics: false
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
+    "atom-ide-outline-view":
+      nameOnly: true
+  "atom-package-deps":
+    ignored: [
+      "prettier-atom"
+    ]
   core:
     autoHideMenuBar: true
     closeDeletedFileTabs: true
     disabledPackages: [
       "wrap-guide"
-      "linter"
     ]
     packagesWithKeymapsDisabled: [
       "tool-bar"
@@ -39,24 +49,24 @@
   "file-icons":
     coloured: false
     tabPaneIcon: false
+  "flow-ide": {}
   "go-plus":
-    format:
-      tool: "gofmt"
-    panel: {}
+    autocomplete: {}
+    config: {}
+    format: {}
+    panel:
+      displayMode: "closed"
     test:
-      coverageHighlightMode: "disabled"
+      coverageDisplayMode: "gutter"
+  "ide-flowtype":
+    tryFlowBin: true
   "line-ending-selector":
     defaultLineEnding: "LF"
-  linter: {}
-  "linter-eslint":
-    disableWhenNoEslintConfig: false
-  "linter-ui-default":
-    panelHeight: 224.75
   "minimap-plus": {}
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
-      isDisabledIfNotInPackageJson: true
+      isDisabledIfNoConfigFile: true
       showInStatusBar: true
     prettierOptions:
       useTabs: true
