@@ -22,6 +22,7 @@
     packagesWithKeymapsDisabled: [
       "tool-bar"
     ]
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
       "nucleus-dark-ui"
